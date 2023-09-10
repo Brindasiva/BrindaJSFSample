@@ -1,11 +1,18 @@
 package com.JSF;
 
-import jakarta.annotation.ManagedBean;
+import java.io.Serializable;
+
+import javax.faces.bean.ManagedBean;
+
+import jakarta.faces.annotation.*;
 import jakarta.enterprise.context.SessionScoped;
 import jakarta.faces.annotation.FacesConfig;
+import jakarta.faces.event.NamedEvent;
+import jakarta.inject.Named;
 
-@FacesConfig
-public class LoginBean {
+@Named("loginBean")
+@SessionScoped
+public class LoginBean implements Serializable{
 		
   private String username;
   private String password;

@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf169397272188614" configfile="/BrindaJSFSample/src/main/webapp/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf169397272188614" configfile="/BrindaJSFSample/src/main/webapp/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="255" y="170" id="pf16943702573610" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf16943702573611" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcome.xhtml" x="599" y="365" id="pf16943702573612" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf16943702573611" path="/welcome.xhtml"/>
+  <links id="pf16943702573611" target="pf16943702573612" source="pf16943702573610"/>
+</pageflow:Pageflow>
